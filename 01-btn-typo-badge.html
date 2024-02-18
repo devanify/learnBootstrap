@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap: Button,Typografi,Badge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Button Bootstrap -->
+        <h1>Button</h1>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-success btn-lg">Success</button>
+        <button type="button" class="btn btn-danger btn-sm">Danger</button>
+        <button type="button" class="btn btn-outline-danger" disabled>Close</button> <br>
+        <div class="btn-group">
+            <button class="btn btn-primary">Add</button>
+            <button class="btn btn-warning">Edit</button>
+            <button class="btn btn-danger">Delete</button>
+        </div> <br>
+        <div class="btn-toolbar mt-1" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group me-2" role="group" aria-label="First group">
+              <button type="button" class="btn btn-primary">1</button>
+              <button type="button" class="btn btn-primary">2</button>
+              <button type="button" class="btn btn-primary">3</button>
+              <button type="button" class="btn btn-primary">4</button>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+            <span role="status">Loading...</span>
+        </button>
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button">Button</button>
+        </div><br>
+
+        <!-- Typografi Bootstrapt-->
+        <h1>Typografi</h1>
+        <h3>Fancy display heading
+            <small class="text-body-secondary">With faded secondary text</small>
+        </h3>
+        <p class="lead">
+            This is a lead paragraph. It stands out from regular paragraphs.
+        </p>
+        <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+        <figure class="text-end">
+            <blockquote class="blockquote">
+              <p>The greatest glory in living lies not in never falling, but in rising every time we fall</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Quotes by <cite title="Source Title">Nelson Mandela</cite>
+            </figcaption>
+        </figure><br>
+
+          <!-- Badge Bootstrat -->
+        <h1>Badge <span class="badge bg-danger">New</span></h1>
+            <!-- Example 1 -->
+        <button type="button" class="btn">
+            Notifications <span class="badge text-bg-danger text-white">4</span>
+        </button> <br> <br>
+            <!-- Example 2 -->
+        <button type="button" class="btn btn-primary position-relative">
+            Email
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+        </button>
+
+
+
+    </div>
+  </body>
+</html>
